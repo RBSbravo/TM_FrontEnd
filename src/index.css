@@ -1,0 +1,1198 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*****Header*****/
+.headerStyle {
+  background: #0e0f0f;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4.5vh;
+  
+}
+img {
+  height: 5vh;
+  border-radius: 50%;
+  border: #f0e9e9 solid 1px;
+}
+.h1Style {
+  color: #61dafb;
+  font-size: 2vw;
+  padding-left: 1rem;
+}
+
+/*****Footer*****/
+.footer {
+  background: #1f1f20;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: 4.5vh;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer h1 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.footer h1 span {
+  color: #ffdd00;
+}
+
+.footer p {
+  font-size: 1vw;
+  margin: 0;
+}
+
+
+/*****LoginSignup*****/
+/* Container styling */
+.container {
+  display: flex;
+  height: 91vh;
+  background: #e7e1e1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Left side styling */
+.leftSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.leftSide h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1f1f20;
+}
+.leftSide img {
+  width: auto;
+  height: 50vh;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+.leftSide p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1f1f20;
+}
+
+
+/* Right side styling */
+.rightSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(17, 16, 16);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+  max-height: 100vh;
+  width: 300px;
+  border: #0e0f0f 1px solid;
+  box-sizing: border-box;
+  background: #efecec;
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+}
+
+.rightSide h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.rightSide h1 span {
+  color: #ffdd00;
+}
+
+.rightSide p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #151414;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.rightSide label {
+  font-size: 1rem;
+  color: #171616;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  font-size: .75rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #dcd2d2;
+  border-radius: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type="submit"] {
+  font-size: .5rem;
+  padding: 10px;
+  background: #0e0f0f;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #7c7892;
+}
+
+.google-signin-button { 
+  font-size: .5rem; 
+  padding: 10px; 
+  background: transparent; 
+  color: rgb(24, 23, 23); 
+  border: #333 solid 1px; 
+  border-radius: 50px; 
+  cursor: pointer; 
+  transition: background 0.3s ease; 
+  margin-top: 10px; 
+  width: 65%;
+} 
+.google-signin-button:hover { 
+  background: #c23321;
+  color: #f4f4f4; 
+}
+
+.github-signin-button {
+  font-size: 1rem;
+  padding: 10px;
+  background: transparent;
+  color: rgb(18, 18, 18);
+  border: #333 solid 1px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  width: 65%;
+}
+
+.github-signin-button:hover {
+  background: #222;
+  color: #f4f4f4;
+}
+/* Toggle button styling */
+.toggle-button {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.toggle-button:hover {
+  color: #564aa3;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+
+.or-separator span {
+  font-size: 1rem;
+  color: #f0e9e9;
+}
+
+
+
+
+/* Responsive Design */
+
+/* For smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the left and right sides vertically */
+    height: auto; /* Allow container height to adjust automatically */
+    padding: 20px 10px; /* Reduce padding for mobile */
+  }
+
+  .leftSide {
+    flex: none;
+    padding: 20px;
+    width: 100%;
+    text-align: center; /* Center align text */
+  }
+
+  .leftSide h1 {
+    font-size: 2rem; /* Reduce heading size on mobile */
+  }
+
+  .leftSide p {
+    font-size: 1.5rem; /* Reduce paragraph size */
+  }
+
+  .rightSide {
+    flex: none;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 0; /* Remove right margin */
+    border-radius: 20px; /* Smaller border radius for mobile */
+  }
+
+  .rightSide h1 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .rightSide p {
+    font-size: 0.9rem; /* Reduce paragraph size */
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px; /* Increase input padding for better touch targets */
+  }
+
+  input[type="submit"], .google-signin-button {
+    font-size: 1rem;
+    padding: 10px; /* Increase button padding */
+  }
+
+  .google-signin-button {
+    width: 80%; /* Make Google button more prominent */
+  }
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack left and right sections vertically */
+    padding: 20px;
+  }
+
+  .leftSide {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .rightSide {
+    padding: 30px;
+    margin-top: 30px;
+    margin-right: 0;
+    border-radius: 30px; /* Medium rounded corners for tablet */
+  }
+
+  .rightSide h1 {
+    font-size: 2rem;
+  }
+
+  .rightSide p {
+    font-size: 1rem;
+  }
+
+  input[type="submit"], .google-signin-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .google-signin-button {
+    width: 70%;
+  }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 10px 10px; /* Add more padding for larger screens */
+  }
+
+  .leftSide h1 {
+    font-size: 3rem; /* Larger font size on desktop */
+  }
+
+  .leftSide p {
+    font-size: 1.5rem;
+  }
+
+  .rightSide {
+    margin-top: 10px;
+    margin-right: 2rem;
+    padding: 10px;
+    border-radius: 50px; /* Large rounded corners */
+  }
+
+  .rightSide h1 {
+    font-size: 2.5rem;
+  }
+
+  .rightSide p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 300px;;
+  
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    margin-top: 5px;
+    padding: 10px; /* Add more padding for inputs */
+  }
+
+  input[type="submit"], .google-signin-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .google-signin-button, .github-signin-button {
+    max-width: 300px;
+    width: 65%; /* Decrease width of Google sign-in button */
+  }
+}
+
+
+/*****Dashboard*****/
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  height: 90vh;
+  background: #f4f4f4;
+  flex-wrap: wrap; /* Allows the content to wrap for smaller screens */
+  background: #000000; /* Black background */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 230px;
+  background: #333; /* Darker background for sidebar */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1); /* Lighter shadow for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85.7vh;
+}
+
+/* Sidebar navigation */
+.sidebar nav ul {
+  list-style: none;
+  padding-top: 5rem;
+}
+
+.sidebar nav ul li {
+  margin: 40px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li .logout-button:hover {
+  color: #0c6d0c; /* Highlight color */
+}
+
+.logout-button {
+  margin-top: 5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  box-shadow: -2px 0 5px rgba(255, 255, 255, 0.1); /* Lighter shadow for contrast */
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000; /* Black text */
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #333; /* Dark text */
+}
+
+/* For small screens (mobile) */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Stack the sidebar and content vertically */
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none; /* Remove shadow on mobile for cleaner look */
+  }
+
+  .sidebar nav ul li {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin: 15px 0;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .logout-button {
+    margin-top: 2rem;
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .main-content h2 {
+    font-size: 1.6rem; /* Smaller font size for mobile */
+  }
+
+  .main-content p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px; /* Slightly smaller sidebar width on tablets */
+  }
+
+  .sidebar nav ul li {
+    font-size: 1.8rem; /* Adjust font size for tablets */
+  }
+
+  .sidebar nav ul li a {
+    font-size: 1.05rem; /* Adjust font size for tablets */
+  }
+
+  .main-content h2 {
+    font-size: 1.8rem; /* Adjust title font size for tablets */
+  }
+
+  .main-content p {
+    font-size: 1.1rem; /* Adjust paragraph font size for tablets */
+  }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    width: 190px; /* Slightly wider sidebar for larger screens */
+  }
+
+  .sidebar nav ul li {
+    font-size: 2rem; /* Larger font size for desktop */
+  }
+
+  .sidebar nav ul li a {
+    font-size: 1.1rem; /* Larger font size for desktop */
+  }
+
+  .main-content h2 {
+    font-size: 2.2rem; /* Larger title font size for desktop */
+  }
+
+  .main-content p {
+    font-size: 1.3rem; /* Larger paragraph font size for desktop */
+  }
+}
+
+
+/*****Calendar******/
+/* Container styling */
+.calendar-container {
+  background: #100f0f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin:  auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading styling */
+.calendar-container h1 {
+  font-size: 2rem;
+  color: #f5efef;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Paragraph styling */
+.calendar-container p {
+  font-size: 1rem;
+  color: #f3ebeb;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Calendar content styling */
+.calendar-content {
+  background: #b6b1b1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Overriding big calendar styles */
+.rbc-calendar {
+  background:  #b6b1b1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.rbc-toolbar {
+  background: #e3e5e7;
+  color: rgb(17, 16, 16);
+  border: #0e0f0f solid 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.rbc-toolbar button {
+  color: rgb(240, 235, 235);
+  background: #e9e9ec;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.rbc-toolbar button:hover {
+  background: #564aa3;
+}
+
+.rbc-event {
+  background: #667eea;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rbc-event:hover {
+  background: #564aa3;
+}
+
+.rbc-month-view, .rbc-time-view {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.rbc-day-bg, .rbc-time-column, .rbc-time-gutter, .rbc-header {
+  background: #f9f9f9;
+}
+
+.rbc-header {
+  color: #667eea;
+  font-weight: bold;
+}
+
+.rbc-today {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .calendar-container {
+    padding: 20px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .calendar-container p {
+    font-size: 0.9rem;
+  }
+
+  .rbc-toolbar button {
+    padding: 4px 8px;
+    margin: 0 3px;
+  }
+
+  .rbc-event {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 992px) {
+  .calendar-container {
+    padding: 15px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .calendar-container p {
+    font-size: 0.8rem;
+  }
+
+  .rbc-toolbar {
+    font-size: 0.8rem;
+  }
+
+  .rbc-event {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .calendar-container p {
+    font-size: 0.7rem;
+  }
+
+  .rbc-toolbar {
+    font-size: 0.7rem;
+  }
+
+  .rbc-event {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .calendar-container {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .calendar-container p {
+    font-size: 0.6rem;
+  }
+
+  .rbc-toolbar {
+    font-size: 0.6rem;
+  }
+
+  .rbc-event {
+    font-size: 0.6rem;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calendar-container {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1rem;
+  }
+
+  .calendar-container p {
+    font-size: 0.5rem;
+  }
+
+  .rbc-toolbar {
+    font-size: 0.5rem;
+  }
+
+  .rbc-event {
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+}
+
+
+/*****TaskHistory******/
+.task-history-container {
+  background: #181818;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.task-history-container h1 {
+  font-size: 2rem;
+  color: #efe9e9;
+  margin-bottom: 20px;
+}
+
+.task-history-container p {
+  font-size: 1.2rem;
+  color: #ece6e6;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+label {
+  color: #ffffff;
+  margin-right: 10px;
+}
+.filter-container select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.task-list {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.task-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-list th,
+.task-list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.task-list th {
+  background: #1a1a1b;
+  color: white;
+}
+
+.task-list td {
+  text-align: left;
+}
+
+.task-list td.missed {
+  color: red;
+}
+
+.task-list td.done {
+  color: green;
+}
+
+
+/*****TaskList******/ 
+/* Task list container styling */
+.task-list-container {
+  background: #5b5151;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.task-list-container h1 {
+  font-size: 2rem;
+  color: #f1ecec;
+  margin-bottom: 20px;
+}
+
+.task-list-container p {
+  font-size: 1.2rem;
+  color: #dcd2d2;
+}
+
+.task-items {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.task-items table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-items th, .task-items td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.task-items th {
+  background: #181818;
+  color: white;
+}
+
+.task-items td {
+  text-align: left;
+}
+
+.task-items button {
+  margin: 5px 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  border: #333 solid 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-items button:hover {
+  background: #181527;
+  color: white;
+}
+
+.add-task-button {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #27b30e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-task-button:hover {
+  background: #57b867;
+}
+
+
+
+/*****AddTaskModal******/ 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(60, 58, 58);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.modal h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f1e9e9;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.modal label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #f1e9e9;
+}
+
+.modal input[type="text"],
+.modal textarea,
+.modal input[type="date"] {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  font-size: 1rem;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: #20a426;
+  color: white;
+}
+
+.submit-button:hover {
+  background: #28d152;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #b20909;
+}
+
+.close-button:hover {
+  color: #f2eeee;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (Tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  .task-history-container {
+    height: auto;
+    padding: 30px;
+    margin: 10px;
+  }
+
+  .task-history-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .task-history-container p {
+    font-size: 1.1rem;
+  }
+
+  .task-list-container {
+    padding: 30px;
+  }
+
+  .task-list-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .task-list-container p {
+    font-size: 1.1rem;
+  }
+
+  .task-items {
+    padding: 15px;
+  }
+
+  .task-items p {
+    font-size: 0.9rem;
+  }
+
+  .add-task-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 1.6rem;
+  }
+
+  .modal input[type="text"],
+  .modal textarea,
+  .modal input[type="date"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .close-button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens (Mobile, 480px to 767px) */
+@media (max-width: 767px) {
+  .task-history-container {
+    height: auto;
+    padding: 20px;
+    margin: 5px;
+  }
+
+  .task-history-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .task-history-container p {
+    font-size: 1rem;
+  }
+
+  .task-list-container {
+    padding: 20px;
+  }
+
+  .task-list-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .task-list-container p {
+    font-size: 1rem;
+  }
+
+  .task-items {
+    padding: 10px;
+  }
+
+  .task-items p {
+    font-size: 0.9rem;
+  }
+
+  .add-task-button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .modal h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal input[type="text"],
+  .modal textarea,
+  .modal input[type="date"] {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .submit-button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .close-button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small screens (Mobile portrait, less than 480px) */
+@media (max-width: 480px) {
+  .task-history-container {
+    height: auto;
+    padding: 15px;
+    margin: 3px;
+  }
+
+  .task-history-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .task-history-container p {
+    font-size: 0.9rem;
+  }
+
+  .task-list-container {
+    padding: 15px;
+  }
+
+  .task-list-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .task-list-container p {
+    font-size: 0.9rem;
+  }
+
+  .task-items {
+    padding: 8px;
+  }
+
+  .task-items p {
+    font-size: 0.8rem;
+  }
+
+  .add-task-button {
+    font-size: 0.75rem;
+    padding: 7px 12px;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modal h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal input[type="text"],
+  .modal textarea,
+  .modal input[type="date"] {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .submit-button {
+    font-size: 0.75rem;
+    padding: 7px;
+  }
+
+  .close-button {
+    font-size: 1.2rem;
+  }
+}
